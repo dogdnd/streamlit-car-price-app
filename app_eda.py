@@ -62,8 +62,8 @@ def run_eda() :
     ### 고객 이름 컬럼을 검색할 수 있도록 만듭니다.
     ### he라고 넣으면, he가 이름에 들어있는 고객들의 데이터를 가져옵니다.
     word = st.text_input('이름 검색어를 입력하세요')
-    result = car_df.loc[ car_df[selected_list].str.lower().str.contains(word) ,   ]
-    st.dataframe(result)
+    result = car_df.loc[ car_df['Customer Name'].str.lower().str.contains(word.lower()) ,   ]
+    st.text(result)
 
 
 
