@@ -8,6 +8,7 @@ from app_ml import run_ml
 
 def main() :
     st.title('자동차 가격 예측')
+    st.title('코드수정')
 
     menu = ['Home', 'EDA', 'ML']
     choice = st.sidebar.selectbox('메뉴 선택',menu)
