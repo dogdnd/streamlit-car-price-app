@@ -6,5 +6,6 @@ def run_home() :
 
     st.text('코드가 수정되었습니다.')
     st.text('2차 코드')
+    st.text('3차 코드')
    
     
